@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kantumruy Pro', sans-serif;
+  background-color: #6699dd;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  background-color: #007291;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 0.8rem;
+  border-radius: 5px;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  color: #fff
+}
+
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group label {
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+.active {
+  transform: translateY(-30px);
+}
+
+.form-group input {
+  margin-bottom: 2rem;
+  width: 100%;
+  padding-bottom: 0.3rem;
+  padding-top: 0.5rem;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #fff;
+}
+
+.form-group input:focus,
+.form-group input:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+
+.form-group input:focus + label span,
+.form-group input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
+} 
+
+
+
+.btn-div,
+.text-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.btn-div a {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #6699dd;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.text-div a {
+  color: #fff;
+}
+
+
+
+
